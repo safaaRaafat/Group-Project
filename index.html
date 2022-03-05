@@ -1,0 +1,135 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/all.min.css">
+    <link rel="stylesheet" href="CSS/index_style.css">
+    <title>Weather App</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Weather</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item me-3">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item me-3">
+                <a class="nav-link" href="#">News</a>
+              </li>
+              <li class="nav-item me-3">
+                <a class="nav-link" href="#">Live cameras</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Photos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div id="main" class="position-relative d-flex justify-content-center align-items-center">
+            <div class="search">
+                <input type="text" class="searchTerm" placeholder="Find your location...">
+                <button type="submit" class="searchButton">
+                  Search
+               </button>
+             </div>
+         <div class="row container position-absolute w-75" id="mainContainer">
+             <div class="col-md-4 text-white" id="dayOne">
+                 <div class="px-2 py-2" id="dayOne-header">
+                 </div>
+                 <div id="dayOneContent">
+                    <p class="ms-3 mt-4 country"></p>
+                 </div>
+                 <div class="d-flex justify-content-center">
+                    <p id="temprature" class="ms-2 mb-0"></p>
+                    <div id="weather-icon-container"></div>
+                 </div>
+                 <p id="weather-text" class="ms-3"></p>
+                 <ul class="list-unstyled ms-3 d-flex">
+                     <li class="d-flex justify-content-start flex-wrap align-items-baseline ms-4">
+                         <img class="align-self-start" src="Images/icon-umberella.png" alt="">
+                         <p id="rain-probability" class="ms-2"></p>
+                     </li>
+                     <li class="d-flex justify-content-start flex-wrap align-items-baseline ms-4">
+                        <img class="align-self-start" src="Images/icon-wind.png" alt="">
+                        <p id="wind-speed" class="ms-2"></p>
+                    </li>
+                    <li class="d-flex justify-content-start flex-wrap align-items-baseline ms-4">
+                        <img class="align-self-start" src="Images/icon-compass.png" alt="">
+                        <p id="direction" class="ms-2">East</p>
+                    </li>
+                 </ul>
+             </div>
+             <div class="col-md-4 text-white" id="dayTwo">
+                <div class="px-2 py-2 d-flex justify-content-center" id="dayTwo-header">
+                </div>
+                <div class="d-flex flex-column justify-content-center align-items-center mt-5">
+                    <div id="weather-icon-container2"></div>
+                   <p id="max-temprature-1" class="mb-0"></p>
+                   <p id="min-temprature-1" class=""></p>
+                   <p id="weather-text2" class=""></p>
+                </div>
+            </div>
+            <div class="col-md-4 text-white" id="dayThree">
+                <div class="px-2 py-2 d-flex justify-content-center" id="dayThree-header">
+                </div>
+                <div class="d-flex flex-column justify-content-center align-items-center mt-5">
+                    <div id="weather-icon-container3"></div>
+                   <p id="max-temprature-2" class="mb-0"></p>
+                   <p id="min-temprature-2" class=""></p>
+                   <p id="weather-text3" class=""></p>
+                </div>
+            </div>
+
+         </div>
+      </div>
+      <section class="section3"></section>
+      <section class="section4">
+        <div class="container d-flex justify-content-between w-75 pt-1">
+            <div class="subscribe">
+                <input type="text" class="subscribeMail" placeholder="Enter your E-mail to subscribe...">
+                <button type="submit" class="subscribeButton">
+                    Subscribe
+               </button>
+             </div>
+             <ul class="list-unstyled d-flex text-white">
+                 <li>
+                     <a href="">
+                        <i class="fab fa-facebook-f icon-w"></i>
+                     </a>
+                 </li>
+                 <li class="ms-3">
+                    <a a href="">
+                       <i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+                <li class="ms-3">
+                    <a a href="">
+                        <i class="fab fa-google-plus-g"></i>
+                    </a>
+                </li>
+                <li class="ms-3">
+                    <a a href="">
+                        <i class="fab fa-pinterest-p icon-w"></i>
+                    </a>
+                </li>
+             </ul>
+        </div>
+        <div class="container w-75">
+            <p class="text-white mt-3 ms-2">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+        </div>
+      </section>
+    <script src="JS/bootstrap.bundle.min.js"></script>
+    <script src="JS/mine.js"></script>
+</body>
+</html>
